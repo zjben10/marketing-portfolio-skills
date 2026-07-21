@@ -36,8 +36,8 @@ Reference files:
 - `references/company-profile.md` — the company's evaluation profile: GTM
   phases, segments, ICP personas, competitors, team capacity, budget
   philosophy, geography, regional connections, and the current event
-  calendar. Start from `references/company-profile.template.md` and fill it
-  in.
+  calendar. It ships as a template — fill in the placeholders for your
+  company.
 
 **Before scoring anything, read `references/company-profile.md` in full.**
 Every criterion below anchors its scores to a section of that file.

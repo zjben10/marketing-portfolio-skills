@@ -28,10 +28,9 @@ make consistent go/no-go calls without re-deriving the logic every time.
 
 ```
 event-evaluator/
-├── SKILL.md                              # the rubric + workflow (company-agnostic)
+├── SKILL.md                    # the rubric + workflow (company-agnostic)
 └── references/
-    ├── company-profile.md                # example company, so it runs on clone
-    └── company-profile.template.md        # blank template — start here for your company
+    └── company-profile.md      # your company's profile (ships as a template)
 ```
 
 The workflow in `SKILL.md` never changes. To point it at your company, you
@@ -39,18 +38,18 @@ only edit one file.
 
 ## Customizing it for your company
 
-1. Copy `references/company-profile.template.md` over
-   `references/company-profile.md`
+`references/company-profile.md` ships as a template. To adopt the skill:
+
+1. Open `references/company-profile.md`
 2. Fill in every `[BRACKET]` and `<!-- FILL IN -->` block: what the company
    is, your GTM phases, segments, ICP personas, competitors, team capacity,
    budget philosophy, geography, regional connections, and your event
    calendar
 3. That's it — the skill reads `company-profile.md`
 
-The included `company-profile.md` is a filled-in example for a fictional
-company ("Cadence", a developer-observability platform). It's deliberately
-in a different industry from where the rubric started, to show the same
-logic travels — so you can see the shape and try the skill immediately.
+The template is self-documenting: every section has inline `e.g.` examples
+showing the shape and level of detail to aim for, so you can see how a
+completed profile should read without a separate sample company.
 
 ## Design notes
 
