@@ -1,0 +1,230 @@
+/*
+  Discovery Recap 1-Pager — stylesheet.
+
+  Brand tokens below are placeholders. In Step 2 the skill replaces the five
+  --primary* / --accent* values with tokens read from the prospect's site (or
+  the fallback palette in company-context.md). Everything else is layout and
+  should not need per-prospect edits.
+
+  The doc is intentionally ONE Letter page. If content overflows, cut copy —
+  do not shrink the base font below 9.5px (Guardrail 2).
+*/
+
+:root {
+  /* --- BRAND TOKENS (injected per prospect) --- */
+  --primary: {{BRAND_PRIMARY}};
+  --primary-deep: {{BRAND_PRIMARY_DEEP}};
+  --primary-soft: {{BRAND_PRIMARY_SOFT}};
+  --accent: {{BRAND_ACCENT}};
+  --accent-soft: {{BRAND_ACCENT_SOFT}};
+
+  /* --- NEUTRALS (fixed) --- */
+  --ink: #1a1d21;
+  --ink-soft: #55606b;
+  --hairline: #e2e6ea;
+  --paper: #ffffff;
+
+  --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: #f4f5f7;
+  font-family: var(--sans);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Letter page: 8.5in x 11in, with print-safe margins baked into padding. */
+.page {
+  width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto;
+  background: var(--paper);
+  padding: 0.62in 0.68in 0.55in;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ---------- MASTHEAD ---------- */
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+}
+.wordmark-name {
+  display: block;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+  line-height: 1;
+}
+.wordmark-descriptor {
+  display: block;
+  margin-top: 4px;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.meta { text-align: right; font-size: 9.5px; color: var(--ink-soft); line-height: 1.6; }
+.meta-label {
+  display: inline-block;
+  min-width: 62px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+}
+
+/* ---------- TITLE ---------- */
+.title-block { margin-top: 2px; }
+h1 {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--ink);
+  max-width: 92%;
+}
+.subtitle {
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  max-width: 90%;
+  line-height: 1.45;
+}
+
+/* ---------- SHARED BLOCK HEADINGS ---------- */
+.block-heading {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+/* ---------- WHAT WE HEARD ---------- */
+.heard-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.heard-item {
+  background: var(--primary-soft);
+  border-radius: 7px;
+  padding: 11px 12px;
+  border-left: 3px solid var(--primary);
+}
+.heard-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 4px;
+}
+.heard-body { font-size: 10px; line-height: 1.45; color: var(--ink-soft); }
+
+/* ---------- WHERE WE CAN HELP ---------- */
+.usecase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.usecase-card {
+  border: 1px solid var(--hairline);
+  border-top: 3px solid var(--accent);
+  border-radius: 7px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.usecase-title { font-size: 12px; font-weight: 700; color: var(--ink); line-height: 1.25; }
+.usecase-desc { font-size: 10px; line-height: 1.45; color: var(--ink-soft); flex: 1; }
+.usecase-maps {
+  font-size: 9.5px;
+  line-height: 1.4;
+  color: var(--primary-deep);
+  padding-top: 6px;
+  border-top: 1px dashed var(--hairline);
+}
+.maps-label {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 8px;
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+/* ---------- FRAMING BAND ---------- */
+.framing-band {
+  background: var(--primary);
+  border-radius: 7px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.framing-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  white-space: nowrap;
+}
+.framing-stages { display: flex; align-items: center; gap: 8px; flex: 1; }
+.framing-stage {
+  flex: 1;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  padding: 6px 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+}
+
+/* ---------- NEXT STEPS ---------- */
+.next-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; }
+.next-card {
+  border: 1px solid var(--hairline);
+  border-radius: 7px;
+  padding: 10px 11px;
+}
+.next-index {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--accent);
+  opacity: 0.55;
+  margin-bottom: 4px;
+}
+.next-body { font-size: 9.5px; line-height: 1.4; color: var(--ink-soft); }
+
+/* ---------- FOOTER ---------- */
+.prepared-by {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--hairline);
+}
+.prepared-label {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.prepared-name { font-size: 11px; font-weight: 700; color: var(--ink); margin-top: 3px; }
+.prepared-title { font-weight: 500; color: var(--ink-soft); }
+.prepared-email { font-size: 9.5px; color: var(--accent); margin-top: 1px; }
+
+/* ---------- PRINT ---------- */
+@page { size: Letter; margin: 0; }
+@media print {
+  html, body { background: #fff; }
+  .page { width: 8.5in; min-height: 11in; margin: 0; box-shadow: none; }
+  .framing-band, .heard-item, .usecase-card, .next-card {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

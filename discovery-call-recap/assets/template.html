@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{PROSPECT_NAME_TITLE}} — Discovery Recap</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+
+    <!-- HEADER -->
+    <header class="masthead">
+      <div class="wordmark">
+        <span class="wordmark-name">{{PROSPECT_NAME}}</span>
+        <span class="wordmark-descriptor">{{PROSPECT_DESCRIPTOR}}</span>
+      </div>
+      <div class="meta">
+        <div class="meta-row"><span class="meta-label">Prepared for</span> {{PROSPECT_NAME_TITLE}}</div>
+        <div class="meta-row"><span class="meta-label">Call date</span> {{CALL_DATE}}</div>
+        <div class="meta-row"><span class="meta-label">Attendees</span> {{CONTACTS}}</div>
+      </div>
+    </header>
+
+    <!-- TITLE -->
+    <section class="title-block">
+      <h1>{{DOC_TITLE}}</h1>
+      <p class="subtitle">{{DOC_SUBTITLE}}</p>
+    </section>
+
+    <!-- WHAT WE HEARD -->
+    <section class="block">
+      <h2 class="block-heading">What we heard</h2>
+      <div class="heard-grid">
+        <div class="heard-item">
+          <div class="heard-label">{{HEARD_ITEM_1_LABEL}}</div>
+          <p class="heard-body">{{HEARD_ITEM_1_BODY}}</p>
+        </div>
+        <div class="heard-item">
+          <div class="heard-label">{{HEARD_ITEM_2_LABEL}}</div>
+          <p class="heard-body">{{HEARD_ITEM_2_BODY}}</p>
+        </div>
+        <div class="heard-item">
+          <div class="heard-label">{{HEARD_ITEM_3_LABEL}}</div>
+          <p class="heard-body">{{HEARD_ITEM_3_BODY}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHERE WE CAN HELP -->
+    <section class="block">
+      <h2 class="block-heading">Where we can help</h2>
+      <div class="usecase-grid">
+        <article class="usecase-card">
+          <h3 class="usecase-title">{{USE_CASE_1_TITLE}}</h3>
+          <p class="usecase-desc">{{USE_CASE_1_DESC}}</p>
+          <p class="usecase-maps"><span class="maps-label">Maps to</span> {{USE_CASE_1_MAPS_TO}}</p>
+        </article>
+        <article class="usecase-card">
+          <h3 class="usecase-title">{{USE_CASE_2_TITLE}}</h3>
+          <p class="usecase-desc">{{USE_CASE_2_DESC}}</p>
+          <p class="usecase-maps"><span class="maps-label">Maps to</span> {{USE_CASE_2_MAPS_TO}}</p>
+        </article>
+        <article class="usecase-card">
+          <h3 class="usecase-title">{{USE_CASE_3_TITLE}}</h3>
+          <p class="usecase-desc">{{USE_CASE_3_DESC}}</p>
+          <p class="usecase-maps"><span class="maps-label">Maps to</span> {{USE_CASE_3_MAPS_TO}}</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FRAMING BAND (optional — delete this whole block if Step 4 skips it) -->
+    <section class="framing-band">
+      <div class="framing-label">{{FRAMING_BAND_LABEL}}</div>
+      <div class="framing-stages">
+        <span class="framing-stage">{{FRAMING_BAND_STAGE_1}}</span>
+        <span class="framing-stage">{{FRAMING_BAND_STAGE_2}}</span>
+        <span class="framing-stage">{{FRAMING_BAND_STAGE_3}}</span>
+        <span class="framing-stage">{{FRAMING_BAND_STAGE_4}}</span>
+      </div>
+    </section>
+    <!-- /FRAMING BAND -->
+
+    <!-- NEXT STEPS -->
+    <section class="block">
+      <h2 class="block-heading">Suggested next step</h2>
+      <div class="next-grid">
+        <div class="next-card">
+          <div class="next-index">01</div>
+          <p class="next-body">{{NEXT_STEP_1}}</p>
+        </div>
+        <div class="next-card">
+          <div class="next-index">02</div>
+          <p class="next-body">{{NEXT_STEP_2}}</p>
+        </div>
+        <div class="next-card">
+          <div class="next-index">03</div>
+          <p class="next-body">{{NEXT_STEP_3}}</p>
+        </div>
+        <div class="next-card">
+          <div class="next-index">04</div>
+          <p class="next-body">{{NEXT_STEP_4}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="prepared-by">
+      <div class="prepared-label">Prepared by</div>
+      <div class="prepared-name">{{AUTHOR_NAME}}<span class="prepared-title">, {{AUTHOR_TITLE}}</span></div>
+      <div class="prepared-email">{{AUTHOR_EMAIL}}</div>
+    </footer>
+
+  </main>
+</body>
+</html>

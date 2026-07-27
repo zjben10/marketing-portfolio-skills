@@ -1,0 +1,149 @@
+# [COMPANY] Context — Discovery Recap 1-Pager
+
+<!--
+  HOW TO USE THIS FILE
+  - This file holds everything company-specific the 1-pager generator needs.
+    The workflow in SKILL.md never changes; you only edit this one file.
+  - It ships as an example. Copy it to company-context.md (drop the
+    ".example") and replace everything in [BRACKETS] and every <!-- FILL IN -->
+    block with your company's details. The skill reads company-context.md.
+  - Lines marked "e.g." are illustrative. Delete them and write your own.
+  - Do NOT commit your real company-context.md. Keep it in .gitignore —
+    only this .example file belongs in the public repo.
+-->
+
+## What we sell (the one-liner)
+
+[One or two sentences: what you sell, to whom, and the outcome it drives.
+This anchors how pains get mapped to use cases.]
+
+<!-- e.g. "[Company] is a [category] platform for [audience]. It helps
+[buyer] [do the core job] without [the usual pain]." -->
+
+---
+
+## Use cases (Step 3 picks EXACTLY 3 from this list)
+
+The generator may only build cards from use cases listed here — it must not
+invent new ones. Give each a stable name plus the pain shape it answers, so
+the "Maps to" line can be written honestly.
+
+1. **[Use case name]** — [what it does] — [answers the pain of: ...]
+2. **[Use case name]** — [what it does] — [answers the pain of: ...]
+3. **[Use case name]** — [what it does] — [answers the pain of: ...]
+4. **[Use case name]** — [what it does] — [answers the pain of: ...]
+<!-- Add as many as you genuinely have. The skill narrows to 3 per doc. -->
+
+---
+
+## Optional framing band (Step 4)
+
+If your product has a natural stage / maturity / lifecycle framing worth
+showing as a visual band, describe it here. If not, write "N/A" and the
+skill skips the band entirely.
+
+<!-- e.g. "Lifecycle: Assess → Pilot → Rollout → Scale. Most prospects
+enter at Assess." Or just: "N/A" -->
+
+- Band label: <!-- FILL IN or N/A -->
+- Stages: <!-- FILL IN -->
+- When to include it: <!-- e.g. "Include for technical buyers evaluating
+  a phased rollout; skip for single-team quick wins." -->
+
+---
+
+## Competitors
+
+Who you come up against, and the honest reason you win or lose. Used to read
+competitive pressure in the transcript — never to trash a competitor in the
+doc itself.
+
+- **[Competitor 1]** — [how we win / where we lose]
+- **[Competitor 2]** — [how we win / where we lose]
+
+---
+
+## Pricing — what's safe to say?
+
+Default posture is **no pricing on the 1-pager** (see Guardrail 3). Only
+override here, explicitly, if something is safe to put in writing.
+
+<!-- e.g. "Never put numbers on the doc. It's fine to say 'usage-based,
+scales with volume.'" Default: leave pricing off entirely. -->
+
+---
+
+## Proof points we're allowed to use
+
+Only claims listed here may appear in the doc (Guardrail 4). If you don't
+have permission to name a customer, use a shape-of-deal reference instead.
+
+- **Named, cleared for external use:** <!-- e.g. "Acme Corp (logo + quote
+  approved)" or "none yet" -->
+- **Shape-of-deal (anonymized) references OK:** <!-- e.g. "a customer with a
+  $50M project", "a 200-person eng org" -->
+- **Metrics we can cite:** <!-- e.g. "cut cycle time from 3 weeks to 3 days"
+  — only if defensible -->
+
+---
+
+## Things we must never claim
+
+Hard "do not write" list (Guardrail 7). The generator checks this before
+writing anything that sounds like a commitment.
+
+- <!-- e.g. No roadmap promises ("coming next quarter"). -->
+- <!-- e.g. No SLA / uptime commitments. -->
+- <!-- e.g. No security/compliance claims beyond [what's certified]. -->
+- <!-- e.g. No pricing commitments beyond the pricing section above. -->
+
+---
+
+## Fallback brand colors (when the prospect's site gives no clean read)
+
+Used in Step 2 only if brand discovery fails. Neutral defaults so the doc
+still looks intentional. These are YOURS to change — the skill file has no
+hardcoded palette.
+
+- `--primary`: <!-- e.g. #1f2933 (near-black slate) -->
+- `--primary-deep`: <!-- e.g. #111827 -->
+- `--primary-soft`: <!-- e.g. #eef1f4 (~12% tint) -->
+- `--accent`: <!-- e.g. #2563eb -->
+- `--accent-soft`: <!-- e.g. #e6efff -->
+
+---
+
+## Our accent (the thin co-branding stripe)
+
+The doc is in the *prospect's* brand; your brand shows up only as a thin
+accent (Guardrail 6). Give the generator what it needs for that light touch.
+
+- Company name (for the "Prepared by" footer): [Company]
+- Wordmark style: <!-- e.g. lowercase, monospace -->
+- One accent color if you want it present: <!-- e.g. #ff5c39, or "none —
+  stay fully in the prospect's palette" -->
+
+---
+
+## Our team (drives the "Prepared by" byline — Step 6)
+
+Everyone who might run this skill. Matched against user identity / git email
+at runtime; never assume one default seller.
+
+| Name | Email | Title |
+|---|---|---|
+| [Full Name] | [email] | [title, e.g. Account Executive] |
+| [Full Name] | [email] | [title] |
+
+<!-- When a new teammate runs the skill and isn't listed, the skill offers
+     to add them here. Commit the update to persist it for the team. -->
+
+---
+
+## Outputs directory
+
+Where built 1-pagers land (Step 5 / Step 8). Must be a real, persistent path
+on disk — not a temp scratchpad — so the local server + headless render can
+read from it.
+
+- Outputs root: <!-- e.g. ~/sales/onepagers -->

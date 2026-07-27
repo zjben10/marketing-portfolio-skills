@@ -1,0 +1,6 @@
+# Your filled-in company context is private — only the .example ships publicly.
+company-context.md
+
+# Built 1-pagers are per-prospect build intermediates, never committed.
+discovery-recaps/
+*.pdf
