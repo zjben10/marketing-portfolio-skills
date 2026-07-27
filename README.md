@@ -7,6 +7,8 @@ A collection of marketing skills for Claude and AI agents built over time. Built
 |---|---|---|
 | `marketing-strategy` | Applies a structured B2B marketing strategy framework — ICP prioritization, positioning, channel strategy, GACCS briefs | Planning a campaign, setting quarterly priorities, writing a brief |
 | `event-evaluator` | Scores conferences/events against ICP fit, GTM phase, and budget constraints | Deciding whether to sponsor, speak at, or attend an event — built to triage 300+ events down to the ones worth the spend |
+| `brand-copy-review` | Reviews and rewrites outbound copy (LinkedIn, cold email, follow-ups, one-pagers) against a brand style guide | Polishing outbound before it ships — voice, value props, banned language, approved phrases |
+| `discovery-call-recap` | Generates a co-branded, one-page PDF recap from a discovery-call transcript, mapping the prospect's disclosed pains to your use cases | Sending a personalized post-call leave-behind a prospect can circulate internally to greenlight a demo |
 
 ## How these were used
 
