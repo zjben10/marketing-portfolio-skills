@@ -9,6 +9,8 @@ A collection of marketing skills for Claude and AI agents built over time. Built
 | `event-evaluator` | Scores conferences/events against ICP fit, GTM phase, and budget constraints | Deciding whether to sponsor, speak at, or attend an event — built to triage 300+ events down to the ones worth the spend |
 | `brand-copy-review` | Reviews and rewrites outbound copy (LinkedIn, cold email, follow-ups, one-pagers) against a brand style guide | Polishing outbound before it ships — voice, value props, banned language, approved phrases |
 | `discovery-call-recap` | Generates a co-branded, one-page PDF recap from a discovery-call transcript, mapping the prospect's disclosed pains to your use cases | Sending a personalized post-call leave-behind a prospect can circulate internally to greenlight a demo |
+| `ae-follow-ups` | Runs a structured pipeline review — proposes stage corrections, triages open follow-up tasks, and drafts context-grounded follow-up emails for approval | Working an AE-stage pipeline: "run my deals", "who needs a follow-up", pre-outreach triage and drafting |
+| `meeting-prep` | Builds a pre-meeting brief (company intel, attendee research, comms history, talking points) anyone can read in five minutes before a call | Getting ready for a prospect or customer call — "prep me for the [company] meeting" |
 
 ## How these were used
 
